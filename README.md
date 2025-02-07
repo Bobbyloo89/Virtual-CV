@@ -1,8 +1,32 @@
-# React + Vite
+  
+# My virtual CV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my virtual CV SPA (Single-Page Application) created using React for a school project. It contains a left-hand vertical navbar with a slider-switch for dark/light mode **(global state management using Redux)** and links **(using React-router for navigating without page reloads)** to the four pages/views:
 
-Currently, two official plugins are available:
+## About  
+Contains information about me as a dev and as a person, displaying a profile image, my title, an short intro and a presentation of who I am, and can be translated to either swedish or english by clicking the flag icons **(language choice managed using useContext)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Experience  
+Contains a list of my previous education and work experience in a time line (list created by sending props between ExperienceItem.jsx and Experience.jsx).
+
+## Projects  
+Contains a list of my public GitHub projects (fetched by using the GitHub API and **utilizing useState/useEffect**.)
+
+## Contact
+Contains links to my LinkedIn, GitHub, and email address.
+
+# How to run this project locally:
+## 1. Clone the repository
+```
+git clone https://github.com/Bobbyloo89/Virtual-CV.git
+cd Virtual-CV
+```
+## 2. Install dependencies
+```
+npm install
+```
+## 3. Start the dev server
+This will give you a link you can ctrl-click or copy-paste into your browser.
+```
+npm run dev
+```
