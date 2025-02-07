@@ -4,13 +4,13 @@
 This is my virtual CV SPA (Single-Page Application) created using React for a school project. It contains a left-hand vertical navbar with a slider-switch for dark/light mode **(global state management using Redux)** and links **(using React-router for navigating without page reloads)** to the four pages/views:
 
 ## About  
-Contains information about me as a dev and as a person, displaying a profile image, my title, a short intro and a presentation of who I am, and can be translated to either swedish or english by clicking the flag icons **(language choice managed using useContext)**.
+Contains information about me as a dev and as a person, displaying a profile image, my title, a short intro and a presentation of who I am, and can be translated to either swedish or english by clicking the flag icons **(language choice managed using useContext)**. (OBS RACHEL! Texten i About är genererad med hjälp av AI och ska ses som en placeholder bara, hade inte tid att skriva det själv).
 
 ## Experience  
 Contains a list of my previous education and work experience in a time line (list created by sending props between ExperienceItem.jsx and Experience.jsx).
 
 ## Projects  
-Contains a list of my public GitHub projects (fetched by using the GitHub API and **utilizing useState/useEffect**.)
+Contains a list (list created by sending props between ProjectItem.jsx and Projects.jsx) of my public GitHub projects (fetched by using the GitHub API and **utilizing useState/useEffect**.)
 
 ## Contact
 Contains links to my LinkedIn, GitHub, and email address.
