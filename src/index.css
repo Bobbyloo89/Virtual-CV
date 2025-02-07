@@ -1,0 +1,579 @@
+/* Global styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", serif; /* Default font unless specified */
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden; /* Hides horizontal scrollbar that appears for no (good) reason when the vertical scrollbar appears :) */
+}
+
+/* Styling for appContainer in default/lightmode */
+.appContainer {
+    background-color: rgb(210, 210, 210); /* Default background color in lightmode unless specified */
+    color: rgb(32, 32, 32); /* Default font color in lightmode unless specified */
+    width: 80svw; /* Navbar 20svw, appContainer 80svw */
+    min-height: 100svh;
+    margin-left: 20svw; /* Leaving room for Navbar */
+}
+
+/* Styling for appContainer in darkmode */
+.appContainer.dark-mode {
+    background-color: rgb(32, 32, 32); /* Default background color in darkmode unless specified */
+    color: rgb(210, 210, 210); /* Default font color in darkmode unless specified */
+}
+
+/* Styling for Header (all views) */
+.header {
+    background-color: rgb(1, 151, 51);
+    font-size: 6svw;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    margin-top: 7svh;
+    width: 100%;
+    height: 10svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for footer in all views */
+.footer {
+    max-width: 80%;
+    font-size: 0.7rem;
+    margin-top: auto;
+    margin-bottom: 3svh;
+}
+
+/* General styling for specific view containers */
+.contact-container, .about-container, .experience-container, .projects-container {
+    width: 80svw;
+    min-height: 100svh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*-------------------------------------PROJECTS VIEW--------------------------------------------- */
+
+/* General styling for list of projects */
+.projects-container ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5svw;
+    margin-bottom: 10svh;
+}
+
+/* Styling for item in projects list */
+.project-item {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3svh;
+    margin-bottom: 3svh;
+    border-bottom: 2px solid rgb(1, 151, 51);
+}
+
+/* Styling for links in project items */
+.project-link {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling for hovering project links */
+.project-link:hover {
+    color: rgb(1, 151, 51);
+}
+
+/* Styling for icons in project items */
+.project-icon {
+    width: 10svw;
+    height: 10svw;
+    max-width: 7svh;
+    max-height: 7svh;
+    background-color: rgb(32, 32, 32);
+    color: rgb(1, 151, 51);
+    border-radius: 50%;
+}
+
+/* Styling for description in project items */
+.project-description {
+    width: 100%;
+    height: auto;
+    min-height: 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 1svh;
+    margin-bottom: 2svh;
+}
+
+/* Styling for info in project items */
+.project-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+/*-----------------------------------------CONTACT VIEW-----------------------------------------------------*/
+
+/* General styling for list in Contact */
+.contact-container ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Styling for links in Contact */
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 4svw;
+    font-weight: bold;
+}
+
+/* Styling for hovering links in Contact */
+.contact-link:hover {
+    color: rgb(1, 151, 51);
+}
+
+/* Styling for icons in Contact */
+.contact-icon {
+    width: 20svw;
+    height: 20svw;
+    max-width: 14svh;
+    max-height: 14svh;
+    margin-top: 4svh;
+    background-color: rgb(32, 32, 32);
+    color: rgb(1, 151, 51);
+    border-radius: 50%;
+}
+
+/*-----------------------------------------------ABOUT VIEW-------------------------------------------------*/
+
+/* Styling for profile image in About */
+
+.profile-pic {
+    width: 30svw;
+    height: 30svw;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 2svh;
+}
+
+/* Styling for title (Front-End Developer) in About */
+.about-title {
+    font-size: 1.2rem;
+    margin-top: 2svh;
+    margin-bottom: 2svh;
+    font-weight: 700;
+    color: rgb(1, 151, 51);
+}
+
+.language-button {
+    background: none;
+    border: none;
+}
+
+.language-flag {
+    width: 9svw;
+    height: 6svw;
+    margin: 1svw;
+}
+
+.language-flag:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for intro-box in About */
+.about-intro {
+    margin: 8svw;
+    padding: 2svw;
+    font-size: 0.8rem;
+    font-style: italic;
+    background-color: rgb(1, 151, 51);
+    border-radius: 10px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: rgb(32, 32, 32);
+}
+
+/* Styling for main section of text in About */
+.about-main {
+    width: 80%;
+    font-size: 0.9rem;
+    margin-bottom: 10svh;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    white-space: pre-line;
+}
+
+/*---------------------------------------------EXPERIENCE VIEW-------------------------------------------------------*/
+
+/* Styling for h2 (Education + Work Experience) in Experience */
+.experience-container h2 {
+    margin-top: 5svh;
+}
+
+/* General styling for lists in Experience */
+.experience-container ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10svh;
+}
+
+/* Styling for items in lists in Experience */
+.experience-item {
+    margin: 3svw;
+}
+
+/* Styling for header (header contains .experience-date and .experience-institution) of items in Experience */
+.experience-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Styling for date in header of items in Experience */
+.experience-date {
+    width: 35%;
+    margin-right: 5%;
+    padding: 2px;
+    font-size: 0.5rem;
+    background-color: rgb(1, 151, 51);
+    border-radius: 3px;
+}
+
+/* Styling for institution in header of items in Experience */
+.experience-institution {
+    width: 60%;
+    font-size: 0.8rem;
+    word-wrap: break-word;  /* Prevents long institution names to bleed outside it's container */
+    overflow-wrap: break-word; /* Alternative syntax for modern browsers */
+}
+
+/* Styling for title (f.ex. Student) in items */
+.experience-title {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 1svh;
+    margin-bottom: 1svh;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: rgb(1, 151, 51);
+}
+
+/* Styling for info in items */
+.experience-info {
+    width: 55%;
+    margin-left: 40%;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.6rem;
+    word-wrap: break-word;  /* Prevents long institution names to bleed outside it's container */
+    overflow-wrap: break-word; /* Alternative syntax for modern browsers */
+}
+
+/* Dotted vertical line between list items in Experience */
+.experience-divider {
+    width: 0px;
+    height: 5svh;
+    border-left: 4px dotted rgb(1, 151, 51);
+    margin: 0 auto;
+    margin-bottom: 3svh;
+}
+
+ /*------------------------------------------------NAVBAR (ALL VIEWS)-----------------------------------------------------*/ 
+
+ /* General styling for Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20svw;
+    height: 100%;
+    background-color: rgb(1, 151, 51);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* Styling for list of links in Navbar */
+.navbar ul {
+    list-style: none;
+    color: rgb(32, 32, 32);
+}
+
+/* Styling for links in Navbar */
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 3.5svmin;
+    font-weight: bold;
+}
+
+/* Styling for icons in Navbar */
+.nav-icon {
+    width: 10svw;
+    height: 10svw;
+    max-width: 7svh;
+    max-height: 7svh;
+    margin-top: 2svh;
+    margin-bottom: 1svw;
+    background-color: rgb(32, 32, 32);
+    color: rgb(1, 151, 51);
+    border-radius: 50%;
+}
+
+/* General styling for Dark/Light mode switch container */
+.switch-container {
+    margin-top: 2svmin;
+    margin-bottom: 8svmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* General styling for switch */
+.switch {
+    width: 16svmin;
+    height: 8svmin;
+    background-color: rgb(210, 210, 210);
+    border-radius: 8svmin;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for switch when darkmode is ON */
+.switch.on {
+    background-color: rgb(32, 32, 32);
+}
+
+/* Styling for switch when darkmode is OFF */
+.switch.off {
+    background-color: rgb(210, 210, 210);
+}
+
+/* General styling for slider */
+.switch-slider {
+    width: 7svmin;
+    height: 7svmin;
+    background-color: rgb(1, 151, 51);
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5svmin;
+    left: 0.5svmin;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for moving slider to ON position */
+.switch.on .switch-slider {
+    transform: translateX(8svmin);
+}
+
+/* Styling for moving (returning) slider to OFF position */
+.switch.off .switch-slider {
+    transform: translateX(0);
+}
+
+/* Styling for sun/moon icons on the slider */
+.switch-slider svg {
+    color: rgb(32, 32, 32);
+    width: 5svmin;
+    height: 5svmin;
+    transition: opacity 0.3s ease-in-out, transform 0.3s;
+}
+
+/*---------------------------------------------@MEDIA 992PX OR WIDER-------------------------------------------------------*/
+
+/* Styling för skärmar bredare än 992px */
+@media only screen and (min-width: 992px) {
+
+/* Styling for appContainer in default/lightmode */
+.appContainer {
+    width: 90svw; /* Navbar 20svw, appContainer 80svw */
+    margin-left: 10svw; /* Leaving room for Navbar */
+}
+
+/* Styling for Header (all views) */
+.header {
+    font-size: 4svw;
+    margin-top: 7svh;
+    height: 8svw;
+}
+
+/* Styling for footer in all views */
+.footer {
+    font-size: 1rem;
+}
+
+/* General styling for specific view containers */
+.contact-container, .about-container, .experience-container, .projects-container {
+    width: 100%;
+}
+
+/*-----------------------------------------CONTACT VIEW-----------------------------------------------------*/
+
+/* General styling for list in Contact */
+.contact-container ul {
+    flex-flow: row;
+}
+
+/* Styling for links in Contact */
+.contact-link {
+    font-size: 2svw;
+    padding: 4svw;
+}
+
+/*-----------------------------------------------ABOUT VIEW-------------------------------------------------*/
+
+/* Styling for profile image in About */
+.profile-pic {
+    width: 10svw;
+    height: 10svw;
+    margin-top: 3svh;
+}
+
+.language-flag {
+    width: 3svw;
+    height: 2svw;
+    margin: 1svw;
+}
+
+/* Styling for title (Front-End Developer) in About */
+.about-title {
+    margin-top: 2svh;
+    margin-bottom: 2svh;
+}
+
+/* Styling for intro-box in About */
+.about-intro {
+    margin-top: 4svh;
+    margin-bottom: 6svh;
+    width: 40%;
+    padding: 2svw;
+    font-size: 1rem;
+}
+
+/* Styling for main section of text in About */
+.about-main {
+    font-size: 1rem;
+}
+
+/*---------------------------------------------EXPERIENCE VIEW-------------------------------------------------------*/
+
+
+/* Styling for h2 (Education + Work Experience) in Experience */
+.experience-container h2 {
+    margin-top: 10svh;
+    font-size: 2rem;
+}
+
+/* Styling for date in header of items in Experience */
+.experience-date {
+    width: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Styling for institution in header of items in Experience */
+.experience-institution {
+    font-size: 1.2rem;
+}
+
+/* Styling for title (f.ex. Student) in items */
+.experience-title {
+    font-size: 1rem;
+}
+
+/* Styling for info in items */
+.experience-info {
+    width: 50%;
+    margin-left: 40%;
+    font-size: 1rem;
+}
+
+ /*------------------------------------------------NAVBAR (ALL VIEWS)-----------------------------------------------------*/ 
+
+ /* General styling for Navbar */
+.navbar {
+    width: 10svw;
+}
+
+/* Styling for links in Navbar */
+.nav-link {
+    font-size: 1.5svw;
+}
+
+/* Styling for icons in Navbar */
+.nav-icon {
+    width: 5svw;
+    height: 5svw;
+    margin-bottom: 1svh;
+}
+
+/* General styling for Dark/Light mode switch container */
+.switch-container {
+    margin-top: 3svh;
+}
+
+/* General styling for switch */
+.switch {
+    width: 8svmin;
+    height: 4svmin;
+    border-radius: 4svmin;
+}
+
+/* General styling for slider */
+.switch-slider {
+    width: 3.5svmin;
+    height: 3.5svmin;
+    top: 0.25svmin;
+    left: 0.25svmin;
+}
+
+/* Styling for moving slider to ON position */
+.switch.on .switch-slider {
+    transform: translateX(4svmin);
+}
+
+/* Styling for sun/moon icons on the slider */
+.switch-slider svg {
+    width: 2.5svmin;
+    height: 2.5svmin;
+}
+}
